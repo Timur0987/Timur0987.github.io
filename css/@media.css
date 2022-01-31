@@ -10,6 +10,22 @@
         left: 32%;
     }
 }
-@media screen and (min-width: 540px) and (max-width: 780px) {
-
+@media screen and (min-width: 370px) and (max-width: 780px) {
+    .chooseColor {
+        position: relative;
+        left: 80%;
+        display: flex;
+        margin-top: 10px;
+    }
+    .ChooseNameWhite {
+        position: relative;
+        left: 64%;
+        padding-top: 5px;
+        color: black;
+    }
+    .ChooseNameBlack {
+        position: relative;
+        left: 64%;
+        padding-top: 5px;
+        color: #fff;
 }

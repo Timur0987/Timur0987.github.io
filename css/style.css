@@ -126,21 +126,18 @@ body{
     border: #222226;
 }
 .chooseColor{
-    position: relative;
-    left: 93%;
     display: flex;
     margin-top: 10px;
+    margin-left: 92%;
 }
 .ChooseNameWhite{
-    position: relative;
-    left: 90%;
     padding-top: 5px;
     color: black;
+    margin-left: 89%;
 }
 .ChooseNameBlack{
-    position: relative;
-    left: 90%;
     padding-top: 5px;
+    margin-left: 89%;
     color: #fff;
 }
 

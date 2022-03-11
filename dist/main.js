@@ -1,1 +1,0 @@
-(()=>{"use strict";let e=document.querySelector(".infoHTML"),t=document.querySelector(".information"),n=document.querySelector(".name");e.addEventListener("click",(()=>{e.style.display="none",t.style.display="block",t.classList.add("animation-show"),n.classList.add("animation-hide")})),window.addEventListener("DOMContentLoaded",(()=>{console.log("hello")}))})();

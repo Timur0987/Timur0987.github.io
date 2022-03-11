@@ -58,3 +58,16 @@
      }
  });
 
+    let time = new Date().getHours();
+    if(time >= 6 || time < 23 ){
+        btnHello.innerHTML = 'Добрый Вечер'
+    }else if(time >= 23 || time < 4 ){
+         btnHello.innerHTML = ' Доброй ночи'
+    }else if(time >= 4 || time < 12){
+        btnHello.innerHTML = 'Доброе утро'
+    }else if(time >= 12 || time < 6){
+        btnHello.innerHTML = 'Добрый день '
+    }
+
+
+

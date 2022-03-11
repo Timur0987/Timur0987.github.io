@@ -111,5 +111,5 @@ function getDynamicInformation(selector) {
 
 getDynamicInformation('#height');
 getDynamicInformation('#weight');
-getDynamicInformation('#age');
+getDynamicInformation('#age')
 

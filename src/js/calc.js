@@ -108,6 +108,15 @@ function getDynamicInformation(selector) {
         calcTotal();
     });
 }
+setTimeout(()=>{
+    if(result > 2000 && result < 3000){
+        console.log('2000-3000')
+    }else  if(result > 3000 && result < 4000){
+        console.log('3000-4000')
+    }else if(result < 2000){
+        console.log('<2000')
+    }
+},1000)
 
 getDynamicInformation('#height');
 getDynamicInformation('#weight');

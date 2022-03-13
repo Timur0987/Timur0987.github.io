@@ -10,7 +10,7 @@
         left: 32%;
     }
 }
-@media screen and (min-width: 370px) and (max-width: 780px) {
+@media screen and (min-width: 370px) and (max-width: 850px) {
     .chooseColor {
         display: flex;
     margin-top: 10px;
@@ -25,5 +25,52 @@
         padding-top: 5px;
         color: #fff;
         margin-left: 66%;
+    }
+    .helloBtnWhite {
+        border: none;
+        background-color: #5995ff;
+        color: #fff;
+        font-size: 45px;
+        border-radius: 6px;
+        padding: 10px 10px 10px 10px;
+        position: relative;
+        right: 19%;
+    }
+    .calculating__choose_medium {
+        width: 100%;
+        justify-content: space-between;
+        margin: 30px auto 0 auto;
+    }
+    .calculating__choose-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+        background: #fff;
+        box-shadow: 0px 4px 15px rgb(0 0 0 / 20%);
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+        transition: 0.3s all;
+    }
+    .calculating__choose_big {
+        width: 100%;
+        justify-content: space-between;
+        margin: 30px auto 0 auto;
+    }
+    .calculating__total {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .calculating__choose-item_active {
+        color: #fff;
+        background-color: #5995ff;
     }
 }

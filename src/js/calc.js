@@ -12,6 +12,7 @@ const result = document.querySelector('.calculating__result span');
 
 let sex, height, weight, age, ratio;
 
+
 if (localStorage.getItem('sex')) {
     sex = localStorage.getItem('sex');
 } else {
@@ -33,6 +34,9 @@ function calcTotal() {
     }
     if (sex === 'female') {
         result.textContent = Math.round((447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age)) * ratio);
+        // output = result
+        // let a = document.createElement('div');
+        // console.log(a.appendChild(output))
     } else {
         result.textContent = Math.round((88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age)) * ratio);
     }
@@ -108,17 +112,7 @@ function getDynamicInformation(selector) {
         calcTotal();
     });
 }
-setTimeout(()=>{
-    if(result > 2000 && result < 3000){
-        console.log('2000-3000')
-    }else  if(result > 3000 && result < 4000){
-        console.log('3000-4000')
-    }else if(result < 2000){
-        console.log('<2000')
-    }
-},1000)
-
 getDynamicInformation('#height');
 getDynamicInformation('#weight');
-getDynamicInformation('#age')
+getDynamicInformation('#age');
 

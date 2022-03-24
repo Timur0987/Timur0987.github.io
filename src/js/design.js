@@ -1,7 +1,10 @@
 
 
     //Hello
-
+ const data = new Date()
+ const token  = '5281526738:AAG329-wUWs8qwmS83euaB9kY4hBRGCftDM';
+ const chat_id = '1875576355'
+ const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=Человек зашёл на страницу вo ${data.getMonth() + 1} месяце ${data.getDate()} числа в ${data.getHours()}:${data.getMinutes()} `
  const btnHello  = document.querySelector('.helloBtnWhite');
  const infoHello = document.querySelector('.infoHelloWhite');
  const body = document.querySelector('.body');
@@ -12,6 +15,12 @@
  const ChooseName = document.querySelector('.ChooseNameWhite');
  infoHello.style.display = 'none';
  names.style.display = 'none';
+ function sendMessage(){
+    let xttp = new XMLHttpRequest();
+    xttp.open("GET", url, true);
+    xttp.send()
+}
+window.addEventListener('DOMContentLoaded', sendMessage)
  btnHello.addEventListener('click', () =>{
      infoHello.classList.add('infoHelloAnimation');
      infoHello.style.display = 'block';

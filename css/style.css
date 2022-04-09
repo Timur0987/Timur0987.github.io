@@ -4,7 +4,15 @@ body{
 .blackDesign{
     text-align: center;
     position: relative;
-    top: 30%;
+    top: 40%;
+}
+.helloBtnWhite2{
+    border: none;
+    background-color: #5995ff;
+    color: #fff;
+    font-size: 45px;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
 }
 .helloBtnWhite{
     border: none;
@@ -206,4 +214,37 @@ body{
 .calculating__result span {
     font-size: 42px;
 }
-
+.divInput{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius:6px;
+}
+.inputForm{
+    font-size: 30px;
+    width: 51%;
+    background-color:#edeef0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    color: black;
+    border: none;
+    margin: 5px;
+}
+::placeholder{
+    color:black;
+}
+.inputSubmit{
+    font-size: 30px;
+    width: 45%;
+    background-color:#edeef0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    color: black;
+    border: none;
+}

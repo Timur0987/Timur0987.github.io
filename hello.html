@@ -8,14 +8,20 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/@media.css">
 </head>
 <body>
-<div  class="helloCalories">
-    <Button class="helloBtnWhite">Для начала рассчитаем каллории</Button>
+    <div class="divInput">
+        <form>
+            <input type="text" placeholder="ведите своё имя " class="inputForm" id="name">
+            <input type="text" placeholder="ведите свою  фамилию" class="inputForm" id="surname">
+            <input type="submit" class="inputSubmit" id="submit">
+        </form>
+    </div>
+<div  class="helloCalories" style="display: none;">
+    <Button class="helloBtnWhite2">Для начала рассчитаем каллории</Button>
 </div>
 <div class="calculating">
     <div class="container">
@@ -61,5 +67,5 @@
     </div>
 </div>
 <body>
-<script src="lib/js/calc.js"></script>
+<script src="src/js/calc.js"></script>
 </body>

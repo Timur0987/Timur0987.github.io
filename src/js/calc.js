@@ -1,9 +1,31 @@
 const helloCalories = document.querySelector('.helloCalories')
 const content = document.querySelector('.calculating')
+const submit = document.querySelector('#submit'),
+      surname = document.querySelector('#surname'),
+      names = document.querySelector('#name'),
+      divInput = document.querySelector('.divInput');
+const token  = '5281526738:AAG329-wUWs8qwmS83euaB9kY4hBRGCftDM';
+ const chat_id = '1875576355'
+const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=зашёл на сайт ${names.value} ${surname.value}`
+function sendMessage(){
+        let xttp = new XMLHttpRequest();
+        xttp.open("GET",`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=зашёл на сайт ${names.value} ${surname.value}`, true);
+        xttp.send()
+    }
+    submit.addEventListener('click',(e)=>{
+        e.preventDefault()
+        sendMessage()
+        divInput.style.display = 'none'
+        helloCalories.style.display = 'block'
+    })
+
+
+
  helloCalories.addEventListener('click', ()=>{
      helloCalories.style.display = 'none';
      content.style.display = 'block'
  })
+
 
 
 

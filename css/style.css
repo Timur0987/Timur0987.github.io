@@ -232,7 +232,7 @@ body{
     padding-right: 10px;
     border-radius: 6px;
     color: black;
-    border: none;
+    border: 0.6px solid #edeef0;
     margin: 5px;
 }
 ::placeholder{

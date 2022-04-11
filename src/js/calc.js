@@ -1,30 +1,39 @@
 const helloCalories = document.querySelector('.helloCalories')
 const content = document.querySelector('.calculating')
 const submit = document.querySelector('#submit'),
-      surname = document.querySelector('#surname'),
-      names = document.querySelector('#name'),
-      divInput = document.querySelector('.divInput');
-const token  = '5281526738:AAG329-wUWs8qwmS83euaB9kY4hBRGCftDM';
- const chat_id = '1875576355'
+    surname = document.querySelector('#surname'),
+    names = document.querySelector('#name'),
+    divInput = document.querySelector('.divInput');
+const token = '5281526738:AAG329-wUWs8qwmS83euaB9kY4hBRGCftDM';
+const chat_id = '1875576355'
 const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=зашёл на сайт ${names.value} ${surname.value}`
-function sendMessage(){
-        let xttp = new XMLHttpRequest();
-        xttp.open("GET",`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=зашёл на сайт ${names.value} ${surname.value}`, true);
-        xttp.send()
-    }
-    submit.addEventListener('click',(e)=>{
+
+function sendMessage() {
+    let xttp = new XMLHttpRequest();
+    xttp.open("GET", `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=зашёл на сайт ${names.value} ${surname.value}`, true);
+    xttp.send()
+}
+submit.addEventListener('click', (e) => {
+    if(surname.value === '' && names.value === ''){
+        names.placeholder = 'ведите имя'
+        surname.placeholder = 'ведите фамилию'
+        names.style.borderColor = 'red'
+        surname.style.borderColor = 'red'
+        e.preventDefault()
+    } else{
         e.preventDefault()
         sendMessage()
         divInput.style.display = 'none'
         helloCalories.style.display = 'block'
-    })
+    }
+})
 
 
 
- helloCalories.addEventListener('click', ()=>{
-     helloCalories.style.display = 'none';
-     content.style.display = 'block'
- })
+helloCalories.addEventListener('click', () => {
+    helloCalories.style.display = 'none';
+    content.style.display = 'block'
+})
 
 
 
@@ -119,7 +128,7 @@ function getDynamicInformation(selector) {
         } else {
             input.style.border = 'none';
         }
-        switch(input.getAttribute('id')) {
+        switch (input.getAttribute('id')) {
             case "height":
                 height = +input.value;
                 break;
@@ -137,4 +146,3 @@ function getDynamicInformation(selector) {
 getDynamicInformation('#height');
 getDynamicInformation('#weight');
 getDynamicInformation('#age');
-

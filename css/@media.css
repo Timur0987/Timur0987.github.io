@@ -98,4 +98,14 @@
         padding: 10px;
         border-radius:6px;
     }
+    .inputSubmit {
+        font-size: 22px;
+        width: 45%;
+        background-color: #edeef0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 6px;
+        color: black;
+        border: none;
+    }
 }

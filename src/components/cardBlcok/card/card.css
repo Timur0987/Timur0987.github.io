@@ -1,0 +1,62 @@
+.card{
+    background-color: white;
+    width: 115px;
+    height: 170px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+.img{
+    width: 115px;
+    height: 140px;
+}
+.selectMode{
+    border: 3px solid red;
+    border-radius: 5px;
+    animation:fadeIn;
+    animation-duration: 1s;
+}
+.btnBlock{
+    text-align: center;
+}
+.btn{
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+    border:none;
+    font-size: 19px;
+}
+@media (max-width: 399.99px) {
+    .img{
+        width: 75px;
+        height: 100px;
+    }
+	.card{
+        width: 75px; 
+        height: 125px;
+        margin-left:5px;
+        margin-top: 10px;
+        margin-right: 5px;
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .selectMode{
+    border: 3px solid red;
+    border-radius: 5px;
+    } 
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
